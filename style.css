@@ -84,6 +84,59 @@ section {
   box-shadow: 0 0 10px rgba(197, 29, 243, 0.6);
 }
 
+/* ------- RESPONSIVE CONTADOR ------- */
+@media (max-width: 600px) {
+  #timer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #timer div {
+    width: 45%;        /* 2 columnas */
+    padding: 10px 0;
+  }
+
+  #timer div span {
+    font-size: 1.6rem;
+  }
+
+  #timer p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #timer div {
+    width: 90%;       /* 1 sola columna */
+  }
+
+  #timer div span {
+    font-size: 1.4rem;
+  }
+}
+
+/* -------- IGUALAR TAMAÑO DE LOS CUADROS DEL CONTADOR -------- */
+
+#timer div {
+  min-width: 110px;      /* ancho igual para todos */
+  text-align: center;
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 600px) {
+  #timer div {
+    width: 100px;        /* todos iguales */
+    padding: 12px 0;
+  }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 400px) {
+  #timer div {
+    width: 90%;          /* una sola columna, ocupan mismo ancho */
+  }
+}
 /* ---------------- SLIDER CONTINUO (CARRUSEL) ---------------- */
 #slider-continuo {
   margin-top: 40px;
@@ -417,4 +470,5 @@ footer {
 }
 .close:hover {
   color: #000;
+
 }
