@@ -84,57 +84,71 @@ section {
   box-shadow: 0 0 10px rgba(197, 29, 243, 0.6);
 }
 
-/* ------- RESPONSIVE CONTADOR ------- */
-@media (max-width: 600px) {
-  #timer {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+/* --- CONTADOR RESPONSIVE Y CUADROS IGUALES --- */
 
-  #timer div {
-    width: 45%;        /* 2 columnas */
-    padding: 10px 0;
-  }
-
-  #timer div span {
-    font-size: 1.6rem;
-  }
-
-  #timer p {
-    font-size: 0.9rem;
-    margin: 0;
-  }
+/* Contenedor */
+#contador #timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* permite que se acomode en pantallas chicas */
 }
 
-@media (max-width: 400px) {
-  #timer div {
-    width: 90%;       /* 1 sola columna */
-  }
-
-  #timer div span {
-    font-size: 1.4rem;
-  }
-}
-
-/* -------- IGUALAR TAMAÑO DE LOS CUADROS DEL CONTADOR -------- */
-
+/* Cada cuadro */
 #timer div {
-  min-width: 110px;      /* ancho igual para todos */
-  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 120px;           /* MISMO ANCHO PARA TODOS */
+  height: 100px;          /* MISMA ALTURA PARA TODOS */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(197, 29, 243, 0.6);
 }
 
-/* Ajuste para pantallas medianas */
-@media (max-width: 600px) {
+#timer div span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#timer div p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* --- RESPONSIVE PARA CELULARES --- */
+@media (max-width: 500px) {
   #timer div {
-    width: 100px;        /* todos iguales */
-    padding: 12px 0;
+    width: 90px;     /* más pequeños */
+    height: 80px;
+    padding: 10px;
+  }
+
+  #timer div span {
+    font-size: 22px;
+  }
+  
+  #timer div p {
+    font-size: 14px;
   }
 }
 
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 400px) {
+/* --- AÚN MÁS PEQUEÑO (320px) --- */
+@media (max-width: 350px) {
   #timer div {
-    width: 90%;          /* una sola columna, ocupan mismo ancho */
+    width: 75px;
+    height: 70px;
+  }
+
+  #timer div span {
+    font-size: 18px;
+  }
+  
+  #timer div p {
+    font-size: 12px;
   }
 }
 /* ---------------- SLIDER CONTINUO (CARRUSEL) ---------------- */
@@ -472,3 +486,4 @@ footer {
   color: #000;
 
 }
+
