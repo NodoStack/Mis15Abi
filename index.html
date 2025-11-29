@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis 15 años 💖</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Allura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logoNS.png">
+</head>
+<body>
+<header>
+    <h1 class="frase">Los XV de</h1>
+
+    <div class="contenedor-foto">
+        <img src="img/foto_abi_1.png" alt="Foto Abi" class="foto-abi">
+    </div>
+
+    <h1 id="nombreAbi">Abi</h1>
+    <p class="fecha">28 de febrero de 2026</p>
+</header>
+
+  <!-- Contador -->
+  <section id="contador">
+    <div id="timer">
+      <div><span id="dias"></span><p>días</p></div>
+      <div><span id="horas"></span><p>horas</p></div>
+      <div><span id="minutos"></span><p>minutos</p></div>
+      <div><span id="segundos"></span><p>segundos</p></div>
+    </div>
+  </section>
+
+  <button class="play-btn boton">🎵 Reproduci mi canción 🎵</button>
+<audio class="card-audio" src="audio/flowers - Miley Cyrus (Lyrics) Ed Sheeran, Ellie Goulding ,Ruth B.mp3"></audio>
+
+  <section id="slider-continuo">
+    <hr class="linea">
+  <h2>"LOS 15 AÑOS SON UN PUENTE ENTRE LOS SUEÑOS DE LA <br>
+    INFANCIA Y LAS METAS DEL FUTURO."💕</h2>
+   <hr class="linea">
+  <div class="carrusel">
+    <div class="track">
+      <img src="img/abi_b_n.jpeg" alt="foto 1">
+      <img src="img/abi_bar.png" alt="foto 2">
+      <img src="img/abi_selfie.jpeg" alt="foto 3">
+      <img src="img/abi_espalda.jpeg" alt="foto 4">
+      <img src="img/abi_negro.jpeg" alt="foto 5">
+      <!-- Repetición para efecto infinito -->
+      <img src="img/abi_b_n.jpeg" alt="foto 1">
+      <img src="img/abi_bar.png" alt="foto 2">
+      <img src="img/abi_selfie.jpeg" alt="foto 3">
+      <img src="img/abi_espalda.jpeg" alt="foto 4">
+      <img src="img/abi_negro.jpeg" alt="foto 5">
+      <img src="img/abi_b_n.jpeg" alt="foto 1">
+      <img src="img/abi_bar.png" alt="foto 2">
+      <img src="img/abi_selfie.jpeg" alt="foto 3">
+      <img src="img/abi_espalda.jpeg" alt="foto 4">
+      <img src="img/abi_negro.jpeg" alt="foto 5">
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion" class="seccion-marco">
+  <h2 class="frase">💗 ¿Dónde? 💗</h2>
+
+  <p>Salón Acapulco Park</p>
+
+  <p class="ubicacion-frase">
+    Te espero aquí, para vivir una noche inolvidable 💕✨
+  </p>
+
+  <img src="img/salon.webp" alt="Foto del salón" class="salon-img" >
+
+  <a href="https://maps.app.goo.gl/S5TCqPa4LPwYCNm8A" target="_blank" class="boton ubicacion-boton">
+    Ver Mapa
+  </a>
+</section>
+
+<section>
+  <hr class="linea" >
+    <h2 id="slider-continuo">"EL TIEMPO SE TRANSFORMA EN EMOCIÓN, Y CADA SEGUNDO DE
+      <br>
+       ESTE DÍA SERÁ UN TESORO EN TU MEMORIA."💕</h2>
+       
+<hr class="linea"><br>
+
+    <div class="slides">
+      <img src="img/abi_b_n.jpeg" alt="foto 1" class="active" />
+      <img src="img/abi_bar.png" alt="foto 2" />
+      <img src="img/abi_selfie.jpeg" alt="foto 3" />
+    </div>
+</section>
+<section class="linea-tiempo-fiesta">
+  <hr class="linea" >
+    <h2 id="slider-continuo"> "CADA MOMENTOSERÁ UN RECUERDO... Y CADA RECUERDO,
+      <br>
+       UN PEDACITO DE MAGIA PARA SIEMPRE." ✨</h2>
+
+<hr class="linea">
+
+  <div class="contenedor-itinerario">
+    <img src="img/itinerario.png" alt="Itinerario de la Fiesta" class="itinerario-img">
+  </div>
+</section>
+
+
+  <hr class="linea" >
+    <h2 id="slider-continuo">💗 “GRACIAS POR SER PARTE DE ESTE MOMENTO QUE GUARDARÉ
+      <br></BR> EN MI CORAZÓN PARA SIEMPRE.”</h2>
+
+<hr class="linea">
+<!-- Confirmar asistencia -->
+<section id="asistencia" class="seccion-marco">
+  <h2 class="frase">¿Contamos con vos?</h2>
+
+  <p class="recordatorio">
+    Recordá que tenés hasta el día 15 de eneero del 2026 para confirmar tu presencia.
+  </p>
+
+  <form id="formAsistencia">
+    <div class="opciones-asistencia">
+      <label class="opcion">
+        <input type="radio" name="asistira" value="Sí" required>
+        <span>SI ASISTIRÉ</span>
+      </label>
+
+      <label class="opcion">
+        <input type="radio" name="asistira" value="No" required>
+        <span>NO ASISTIRÉ</span>
+      </label>
+    </div>
+
+    <label>Nombre y Apellido:</label>
+    <input type="text" name="nombre" placeholder="Tu nombre y apellido" required />
+
+    <label>Mensaje:</label>
+    <textarea name="mensaje" placeholder="Mensaje opcional, por ejemplo alguna restricción alimenticia"></textarea>
+
+    <button type="submit" class="boton">Confirma asistencia</button>
+  </form>
+
+  <p id="mensaje"></p>
+</section>
+
+  <hr class="linea">
+<br>
+
+<section id="dress" class="seccion-marco">
+  <h2 class="frase">Dress Code</h2>
+
+  <img class="dresscode__img" src="img/vectores/dresscodeVECTOR15.svg" alt="" style="width:80px; height:auto;">
+  
+  <p>ELEGANTE SPORT</p>
+
+  <a id="openDressModal" class="boton">Código de vestimenta</a>
+</section>
+
+<!-- Modal (único) -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <img src="img/dresscode.png" alt="Dress Code" class="modal-img">
+  </div>
+</div>
+
+  <hr class="linea" >
+    <h2 id="slider-continuo">💕"QUE LA MAGIA DE ESTE DÍA NOS ENVUELVA Y
+      <br>
+       LO CONVIERTA EN UN RECUERDO ETERNO." </h2>
+
+  <hr class="linea">
+  <!-- Subir fotos -->
+<section id="fotos" class="seccion-marco">
+  <h2 class="frase">💗 Suma tus fotos conmigo 💗</h2>
+
+  <p>Puedes agregar tus fotos en mi álbum compartido:</p>
+
+  <a href="https://photos.app.goo.gl/b6do54R3a2xXe3rdA" 
+     target="_blank" 
+     class="boton">
+     Abrir álbum de fotos
+  </a>
+
+</section>
+  <hr class="linea">
+<br>
+<section id="dress" class="seccion-marco">
+  <h2 class="frase">Regalos</h2>
+
+  <img class="dresscode__img" src="img/vectores/regalos.svg" alt="" style="width:80px; height:auto;">
+  
+  <p class="frase-regalo frase">💌 “Tu presencia es el regalo más valioso para mí.
+Si deseas dejarme un presente, encontrarás una pequeña urna en la entrada del salón.
+También podés hacerlo por transferencia si te resulta más cómodo.
+Gracias por acompañarme en este día tan especial.”</p>
+
+  <button id="openCuentaModal" class="boton">Ver cuenta</button>
+</section>
+<!-- Modal -->
+<div id="cuentaModal" class="modal">
+  <div class="modal-content seccion-marco">
+    <span class="close">&times;</span>
+    <h3>Datos de cuenta</h3>
+    <p><strong>Alias:</strong> abi.mis.15</p>
+    <p><strong>CBU:</strong> 5698745555500000586555</p>
+  </div>
+</div>
+
+<footer>
+  <p>
+    Página creada por <strong>"NodoStack"</strong> para los 15 de <strong>Abi</strong> con 💖 - 
+    <span id="year"></span> &copy; todos los derechos reservados
+  </p>
+
+  <a href="https://nodostack.netlify.app/" 
+     target="_blank" 
+     style="color: inherit; text-decoration: none;">
+     <strong>NodoStack</strong>
+  </a> 
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
