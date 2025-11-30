@@ -538,3 +538,54 @@ footer {
 .toast.show {
   opacity: 1;
 }
+
+.destello {
+  color: #d38bfd;
+  font-weight: bold;
+  animation: glow 1.6s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px rgba(255, 150, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(255, 150, 255, 1);
+  }
+}
+
+.destello:hover {
+  color: #ffffff;
+}
+
+.subrayado {
+  position: relative;
+  color: #d38bfd;
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease;
+}
+
+/* SUBRAYADO ANIMADO (solo visible cuando hay hover) */
+.subrayado::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #d38bfd;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.4s;
+}
+
+.subrayado:hover::after {
+  width: 100%;
+}
+
+/* EFECTO PARA CELULAR (cuando no existe hover) */
+@media (hover: none) {
+  .subrayado {
+    text-shadow: 0 0 6px rgba(255, 150, 255, 0.7);
+  }
+}
