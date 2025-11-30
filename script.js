@@ -30,7 +30,7 @@ function cambiarSlide() {
   imagenes[indice].classList.add("active");
 }
 
-setInterval(cambiarSlide, 3000);
+setInterval(cambiarSlide, 2000);
 
 // ---- FORMULARIO GOOGLE SHEETS (ASISTENCIA) ----
 const scriptURL = "https://script.google.com/macros/s/AKfycbzytIvk58hHswyogUHy5BOEgozFJuNuY8_aB4JxH9FHkuoboN7bDQuVXy6fcVzEvoOL/exec"; // reemplazá con tu URL real
@@ -131,3 +131,19 @@ playButtons.forEach((btn) => {
     };
   });
 });
+
+function copiarTexto(texto) {
+  navigator.clipboard.writeText(texto).then(() => {
+    mostrarToast("¡Copiado!");
+  });
+}
+
+function mostrarToast(mensaje) {
+  const toast = document.getElementById("toast");
+  toast.textContent = mensaje;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2000); // desaparece en 2 segundos
+}

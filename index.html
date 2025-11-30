@@ -13,14 +13,14 @@
 </head>
 <body>
 <header>
-    <h1 class="frase">Los XV de</h1>
+    <h1 id="nombreAbi" >Los XV de</h1>
 
     <div class="contenedor-foto">
         <img src="img/foto_abi_1.png" alt="Foto Abi" class="foto-abi">
     </div>
 
     <h1 id="nombreAbi">Abi</h1>
-    <p class="fecha">28 de febrero de 2026</p>
+    <p class="fecha frase"><strong>28 de febrero de 2026</strong></p>
 </header>
 
   <!-- Contador -->
@@ -33,13 +33,13 @@
     </div>
   </section>
 
-  <button class="play-btn boton">🎵 Reproduci mi canción 🎵</button>
+  <button class="play-btn boton">🎵Reproducí mi canción🎵</button>
 <audio class="card-audio" src="audio/flowers - Miley Cyrus (Lyrics) Ed Sheeran, Ellie Goulding ,Ruth B.mp3"></audio>
 
   <section id="slider-continuo">
     <hr class="linea">
-  <h2>"LOS 15 AÑOS SON UN PUENTE ENTRE LOS SUEÑOS DE LA <br>
-    INFANCIA Y LAS METAS DEL FUTURO."💕</h2>
+  <h2 class="frase">✨ "Los 15 años son un puente entre los sueños de la <br>
+    infancia y las metas del futuro."</h2>
    <hr class="linea">
   <div class="carrusel">
     <div class="track">
@@ -54,6 +54,7 @@
       <img src="img/abi_selfie.jpeg" alt="foto 3">
       <img src="img/abi_espalda.jpeg" alt="foto 4">
       <img src="img/abi_negro.jpeg" alt="foto 5">
+      <!-- Repetición para efecto infinito -->
       <img src="img/abi_b_n.jpeg" alt="foto 1">
       <img src="img/abi_bar.png" alt="foto 2">
       <img src="img/abi_selfie.jpeg" alt="foto 3">
@@ -64,12 +65,12 @@
 </section>
 
 <section id="ubicacion" class="seccion-marco">
-  <h2 class="frase">💗 ¿Dónde? 💗</h2>
+  <h2 class="frase"> ¿Dónde? </h2>
 
-  <p>Salón Acapulco Park</p>
+  <p class="frase-regalo frase" >Salón Acapulco Park</p>
 
-  <p class="ubicacion-frase">
-    Te espero aquí, para vivir una noche inolvidable 💕✨
+  <p class="frase-regalo frase" >
+    Te espero aquí, para vivir una noche inolvidable ✨
   </p>
 
   <img src="img/salon.webp" alt="Foto del salón" class="salon-img" >
@@ -81,55 +82,58 @@
 
 <section>
   <hr class="linea" >
-    <h2 id="slider-continuo">"EL TIEMPO SE TRANSFORMA EN EMOCIÓN, Y CADA SEGUNDO DE
-      <br>
-       ESTE DÍA SERÁ UN TESORO EN TU MEMORIA."💕</h2>
+    <h2 id="slider-continuo" class="frase">✨ "El tiempo se transforma en emoción, y cada segundo de éste día
+      <br> será un tesoro en mi memoria."</h2>
        
 <hr class="linea"><br>
 
     <div class="slides">
-      <img src="img/abi_b_n.jpeg" alt="foto 1" class="active" />
-      <img src="img/abi_bar.png" alt="foto 2" />
-      <img src="img/abi_selfie.jpeg" alt="foto 3" />
+      <img src="img/selfie_auriculares.jpeg" alt="foto 1" class="active" />
+      <img src="img/selfie_auto1.jpeg" alt="foto 2" />
+      <img src="img/selfie_cole.jpeg" alt="foto 3" />
+      <img src="img/slefie_de_arriba.jpeg" alt="foto 4" />
+      <img src="img/selfie_parque.jpeg" alt="foto 5" />
+      <img src="img/selfie_luz.jpeg" alt="foto 6" />
+      <img src="img/Selfie_cole2.jpeg" alt="foto 7" />
     </div>
 </section>
 <section class="linea-tiempo-fiesta">
   <hr class="linea" >
-    <h2 id="slider-continuo"> "CADA MOMENTOSERÁ UN RECUERDO... Y CADA RECUERDO,
+    <h2 id="slider-continuo" class="frase"> "Cada momento será un recuerdo... y cada recuerdo,
       <br>
-       UN PEDACITO DE MAGIA PARA SIEMPRE." ✨</h2>
+       un pedacito de magia." ✨</h2>
 
 <hr class="linea">
 
   <div class="contenedor-itinerario">
-    <img src="img/itinerario.png" alt="Itinerario de la Fiesta" class="itinerario-img">
+    <img src="img/itinerario2.png" alt="Itinerario de la Fiesta" class="itinerario-img">
   </div>
 </section>
 
 
   <hr class="linea" >
-    <h2 id="slider-continuo">💗 “GRACIAS POR SER PARTE DE ESTE MOMENTO QUE GUARDARÉ
-      <br></BR> EN MI CORAZÓN PARA SIEMPRE.”</h2>
+    <h2 id="slider-continuo" class="frase">✨ “Gracias por ser parte de este momento que guardaré
+      <br>en mi corazón para siempre.”</h2>
 
 <hr class="linea">
 <!-- Confirmar asistencia -->
 <section id="asistencia" class="seccion-marco">
   <h2 class="frase">¿Contamos con vos?</h2>
 
-  <p class="recordatorio">
-    Recordá que tenés hasta el día 15 de eneero del 2026 para confirmar tu presencia.
+  <p class="frase-regalo frase" >
+    Recordá que tenés hasta el día 15 de enero del 2026 para confirmar tu presencia.
   </p>
 
   <form id="formAsistencia">
     <div class="opciones-asistencia">
       <label class="opcion">
         <input type="radio" name="asistira" value="Sí" required>
-        <span>SI ASISTIRÉ</span>
+        <span>Si asistiré</span>
       </label>
 
       <label class="opcion">
         <input type="radio" name="asistira" value="No" required>
-        <span>NO ASISTIRÉ</span>
+        <span>No asistiré</span>
       </label>
     </div>
 
@@ -153,7 +157,8 @@
 
   <img class="dresscode__img" src="img/vectores/dresscodeVECTOR15.svg" alt="" style="width:80px; height:auto;">
   
-  <p>ELEGANTE SPORT</p>
+  <p class="frase">Elegante Sport</p>
+  <br>
 
   <a id="openDressModal" class="boton">Código de vestimenta</a>
 </section>
@@ -167,16 +172,19 @@
 </div>
 
   <hr class="linea" >
-    <h2 id="slider-continuo">💕"QUE LA MAGIA DE ESTE DÍA NOS ENVUELVA Y
+    <h2 id="slider-continuo" class="frase">"Que la magia de este día nos envuelva y
       <br>
-       LO CONVIERTA EN UN RECUERDO ETERNO." </h2>
+       lo convierta en un recuerdo eterno." ✨</h2>
 
   <hr class="linea">
   <!-- Subir fotos -->
 <section id="fotos" class="seccion-marco">
-  <h2 class="frase">💗 Suma tus fotos conmigo 💗</h2>
+  <h2 class="frase"> Suma tus fotos conmigo </h2>
 
-  <p>Puedes agregar tus fotos en mi álbum compartido:</p>
+  <img class="dresscode__img" src="img/album.webp" alt="" style="width:80px; height:auto;">
+
+  <p class="frase-regalo frase" >Puedes agregar tus fotos en mi álbum compartido:</p>
+  <br>
 
   <a href="https://photos.app.goo.gl/b6do54R3a2xXe3rdA" 
      target="_blank" 
@@ -192,7 +200,7 @@
 
   <img class="dresscode__img" src="img/vectores/regalos.svg" alt="" style="width:80px; height:auto;">
   
-  <p class="frase-regalo frase">💌 “Tu presencia es el regalo más valioso para mí.
+  <p class="frase-regalo frase" >📨 “Tu presencia es el regalo más valioso para mí.
 Si deseas dejarme un presente, encontrarás una pequeña urna en la entrada del salón.
 También podés hacerlo por transferencia si te resulta más cómodo.
 Gracias por acompañarme en este día tan especial.”</p>
@@ -204,9 +212,20 @@ Gracias por acompañarme en este día tan especial.”</p>
   <div class="modal-content seccion-marco">
     <span class="close">&times;</span>
     <h3>Datos de cuenta</h3>
-    <p><strong>Alias:</strong> abi.mis.15</p>
-    <p><strong>CBU:</strong> 5698745555500000586555</p>
+
+    <p><strong>Alias:</strong> Abigail.2000.G</p>
+    <button class="copiar-btn" onclick="copiarTexto('Abigail.2000.G')">
+      <img src="img/vectores/copiar.svg" alt="Copiar" class="icono-copiar">
+      Copiar alias
+    </button>
+
+    <p><strong>CBU:</strong> 0000003100027916808362</p>
+    <button class="copiar-btn" onclick="copiarTexto('0000003100027916808362')">
+      <img src="img/vectores/copiar.svg"alt="Copiar" class="icono-copiar">
+      Copiar CBU
+    </button>
   </div>
+  <div id="toast" class="toast">¡Copiado!</div>
 </div>
 
 <footer>
